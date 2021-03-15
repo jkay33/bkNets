@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardContainer from './containers/card_container'
-import Chart from './components/charts';
+// import Chart from './components/charts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
