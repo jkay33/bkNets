@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, Button, ListGroup} from 'react-bootstrap';
+import { Card, CardImg, Button, ListGroup, Accordion } from 'react-bootstrap';
 
 
 class PlayerCard extends Component{
@@ -19,24 +19,25 @@ class PlayerCard extends Component{
             };
         }
         return (
-            <div>
+            <Accordion>
                 <Card border="dark" className="text-center" style={{ width: '18rem' }}>
                     <CardImg variant="top" src={this.props.player.image}/>
                     <Card.Body>
                         <Card.Title>{mapName(player_id)}</Card.Title>
-                        <Button>Click Me</Button>
-                            <ListGroup>
-                                <ListGroup.Item>fga: {fga}</ListGroup.Item>
-                                <ListGroup.Item>fta: {fta}</ListGroup.Item>
-                                <ListGroup.Item>ft%: {ft_pct}</ListGroup.Item>
-                                <ListGroup.Item>dreb: {dreb}</ListGroup.Item>
-                                <ListGroup.Item>oreb: {oreb}</ListGroup.Item>
-                                <ListGroup.Item>turnover: {turnover}</ListGroup.Item>
-                            </ListGroup>
-                    </Card.Body>
-                </Card>
-
-            </div>
+                            <Accordion.Toggle as={Button} varient="link" eventKey="0">Stats</Accordion.Toggle>
+                                <Accordion.Collapse eventKey="0">
+                                    <ListGroup>
+                                        <ListGroup.Item>fga: {fga}</ListGroup.Item>
+                                        <ListGroup.Item>fta: {fta}</ListGroup.Item>
+                                        <ListGroup.Item>ft%: {ft_pct}</ListGroup.Item>
+                                        <ListGroup.Item>dreb: {dreb}</ListGroup.Item>
+                                        <ListGroup.Item>oreb: {oreb}</ListGroup.Item>
+                                        <ListGroup.Item>turnover: {turnover}</ListGroup.Item>
+                                    </ListGroup>
+                                </Accordion.Collapse>
+                        </Card.Body>
+                    </Card>
+            </Accordion>
         )
     }
 }
