@@ -26,7 +26,7 @@ class PlayerCard extends Component{
                         <Card.Title>{mapName(player_id)}</Card.Title>
                             <Accordion.Toggle as={Button} varient="link" eventKey="0">Stats</Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
-                                    <ListGroup>
+                                    <ListGroup style={{margin: 10}}>
                                         <ListGroup.Item>fga: {fga}</ListGroup.Item>
                                         <ListGroup.Item>fta: {fta}</ListGroup.Item>
                                         <ListGroup.Item>ft%: {ft_pct}</ListGroup.Item>
