@@ -71,9 +71,9 @@ const BarChart = () => {
         chart();
     }, [])
     return(
-        <div>
+        <Container>
             <Bar data={chartData} options={options} />
-        </div>
+        </Container>
     )
 }
 export default BarChart;
