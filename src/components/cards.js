@@ -17,13 +17,13 @@ class PlayerCard extends Component{
         }
         return (
             <Accordion>
-                <Card border="dark" className="text-center" style={{ width: '18rem' }}>
+                <Card border="dark" className="text-center" style={{ width: '18rem', margin: 10}}>
                     <CardImg variant="top" src={this.props.player.image}/>
                     <Card.Body>
                         <Card.Title>{mapName(player_id)}</Card.Title>
                             <Accordion.Toggle as={Button} varient="link" eventKey="0">Stats</Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
-                                    <ListGroup style={{margin: 10}}>
+                                    <ListGroup style={{margin: 15}}>
                                         <ListGroup.Item>fga: {fga}</ListGroup.Item>
                                         <ListGroup.Item>fta: {fta}</ListGroup.Item>
                                         <ListGroup.Item>ft%: {ft_pct}</ListGroup.Item>

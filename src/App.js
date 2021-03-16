@@ -4,13 +4,6 @@ import BarChart from './containers/chart_container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component{
-  constructor(props){
-    super(props)
-      this.state = {
-        Data: {},
-      };
-    }
-    
 
     render(){
       return(

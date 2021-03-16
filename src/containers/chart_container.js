@@ -44,6 +44,7 @@ const BarChart = () => {
                     data: netrtg,
                     type: 'line',
                     fill: false,
+                    showLine: false,
                     backgroundColor: 'rgba(0,0,0,0.9)'
                 }
 
