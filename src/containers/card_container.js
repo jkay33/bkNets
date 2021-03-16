@@ -17,7 +17,14 @@ class CardContainer extends Component{
     //Api call
     componentDidMount(){
         fetch(playerApi)
-            .then(res => res.json())
+            //catch error response from api
+            .then(res => {
+                if(res.ok){
+                    return res.json()
+                }else {
+                    throw new Error ('Error in the API call')
+                }
+            })
             .then((data) => {
                 // console.log(data);
                 this.setState({ data: data.data.map(t => ({
@@ -33,6 +40,7 @@ class CardContainer extends Component{
             })
         })
     }
+    //function mapping player picture with api player ID
     findPic(prop){
         switch(prop){
             case 140:

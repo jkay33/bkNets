@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardContainer from './containers/card_container'
-// import Chart from './components/charts';
+import BarChart from './containers/chart_container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component{
@@ -16,6 +16,7 @@ class App extends Component{
       return(
         <div>
           <CardContainer />
+          <BarChart />
         </div>
       )
     }

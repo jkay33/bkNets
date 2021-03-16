@@ -3,9 +3,6 @@ import { Card, CardImg, Button, ListGroup, Accordion } from 'react-bootstrap';
 
 
 class PlayerCard extends Component{
-    constructor(props){
-        super(props);
-    }
     render (){
         let { player_id, fga, fta, ft_pct, dreb, oreb, turnover } = this.props.player;
         function mapName(prop){
