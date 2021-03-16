@@ -1,26 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { csv } from 'd3-request';
 import { Bar } from 'react-chartjs-2';
-<<<<<<< HEAD
 import { Container } from 'react-bootstrap';
 
 import barData from './data/nbaData.csv';
 
 
-=======
-
-import barData from './data/nbaData.csv';
-
->>>>>>> 2dcd92d34becfc79a0762659af0f0dc59bf42f17
 const BarChart = () => {
     const [chartData, setChartData] = useState({});
 
     const chart = () => {
-<<<<<<< HEAD
         //ETL data to something chart can read
-=======
-        //transforming data to something chart can read
->>>>>>> 2dcd92d34becfc79a0762659af0f0dc59bf42f17
         const pairplayer = [];
         const offrtg = [];
         const defrtg = [];
@@ -84,10 +74,6 @@ const BarChart = () => {
         <div>
             <Bar data={chartData} options={options} />
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 2dcd92d34becfc79a0762659af0f0dc59bf42f17
     )
 }
 export default BarChart;
