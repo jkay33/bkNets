@@ -67,7 +67,7 @@ class CardContainer extends Component{
         return(
             <Container fluid>
                 <h1>Nets' Big 3</h1>
-                <Row style={{height: '670px' }}>
+                <Row style={{padding: '30px' }}>
                     {playerCards}
                 </Row>
             </Container>
