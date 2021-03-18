@@ -12,7 +12,7 @@ class PlayerCard extends Component{
                 case 192:
                     return "James Harden";
                 default:
-                    return "Kyie Irving";
+                    return "Kyrie Irving";
             };
         }
         return (

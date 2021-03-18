@@ -4,7 +4,7 @@ import banner from './header_assets/banner.jpeg';
 
 const Header = () =>{
     return(
-        <div style={{ }}>
+        <div>
             <Image src={ banner } fluid />
         </div>
 
