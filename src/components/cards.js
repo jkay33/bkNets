@@ -16,8 +16,9 @@ class PlayerCard extends Component{
             };
         }
         return (
-            <Accordion>
-                <Card border="dark" className="text-center" style={{ width: '18rem', margin: 10}}>
+
+            <Accordion style={{ display: 'flex', justifyContent:'center' }}>
+                <Card className="text-center" style={{ width: '18rem', margin: 10}}>
                     <CardImg variant="top" src={this.props.player.image}/>
                     <Card.Body>
                         <Card.Title>{mapName(player_id)}</Card.Title>

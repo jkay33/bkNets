@@ -3,6 +3,7 @@ import { csv } from 'd3-request';
 import { Bar } from 'react-chartjs-2';
 import { Container } from 'react-bootstrap';
 
+import './chart.css';
 import barData from './data/nbaData.csv';
 
 
@@ -56,7 +57,7 @@ const BarChart = () => {
     const options = {
         title: {
             display: true,
-            text: "Durant Second Man Pair"
+            text: "Durant Player Pairing Efficiency"
         },
         responsive: true,
         scales: {
@@ -72,7 +73,8 @@ const BarChart = () => {
         chart();
     }, [])
     return(
-        <Container>
+        <Container fluid>
+            <h1>Durant's Pairing Efficiency</h1>
             <Bar data={chartData} options={options} />
         </Container>
     )

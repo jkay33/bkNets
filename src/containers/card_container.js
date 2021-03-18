@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import PlayerCard from '../components/cards';
 import KD from './player_images/K. Durant.png';
 import JH from './player_images/J. Harden.png';
@@ -58,7 +58,7 @@ class CardContainer extends Component{
         //console.log(this.state.data);
         let playerCards = this.state.data.map(data => {
             return (
-                <Col sm="4" key={data.player_id}>
+                <Col sm key={data.player_id}>
                     <PlayerCard player={data} />
                 </Col>
             )
@@ -66,7 +66,8 @@ class CardContainer extends Component{
         })
         return(
             <Container fluid>
-                <Row>
+                <h1>Nets' Big 3</h1>
+                <Row style={{height: '670px' }}>
                     {playerCards}
                 </Row>
             </Container>
