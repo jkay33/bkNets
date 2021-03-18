@@ -29,11 +29,12 @@ class CardContainer extends Component{
                 // console.log(data);
                 this.setState({ data: data.data.map(t => ({
                     player_id: t.player_id,
-                    fga: t.fga,
-                    fta: t.fta,
+                    pts: t.pts,
+                    reb: t.reb,
+                    ast: t.ast,
+                    fg_pct: t.fg_pct,
+                    fg3_pct: t.fg3_pct,
                     ft_pct: t.ft_pct,
-                    dreb: t.dreb,
-                    oreb: t.oreb,
                     turnover: t.turnover,
                     image: this.findPic(t.player_id) 
                 })) 

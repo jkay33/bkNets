@@ -4,7 +4,7 @@ import { Card, CardImg, Button, ListGroup, Accordion } from 'react-bootstrap';
 
 class PlayerCard extends Component{
     render (){
-        let { player_id, fga, fta, ft_pct, dreb, oreb, turnover } = this.props.player;
+        let { player_id, pts, reb, ast, fg_pct, fg3_pct, ft_pct, turnover } = this.props.player;
         function mapName(prop){
             switch(prop){
                 case 140:
@@ -25,11 +25,12 @@ class PlayerCard extends Component{
                             <Accordion.Toggle as={Button} varient="link" eventKey="0">Stats</Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
                                     <ListGroup style={{margin: 15}}>
-                                        <ListGroup.Item>fga: {fga}</ListGroup.Item>
-                                        <ListGroup.Item>fta: {fta}</ListGroup.Item>
-                                        <ListGroup.Item>ft%: {ft_pct}</ListGroup.Item>
-                                        <ListGroup.Item>dreb: {dreb}</ListGroup.Item>
-                                        <ListGroup.Item>oreb: {oreb}</ListGroup.Item>
+                                        <ListGroup.Item>pts: {pts}</ListGroup.Item>
+                                        <ListGroup.Item>reb: {reb}</ListGroup.Item>
+                                        <ListGroup.Item>ast: {ast}</ListGroup.Item>
+                                        <ListGroup.Item>fg_pct: {fg_pct}</ListGroup.Item>
+                                        <ListGroup.Item>fg3_pct: {fg3_pct}</ListGroup.Item>
+                                        <ListGroup.Item>ft_pct: {ft_pct}</ListGroup.Item>
                                         <ListGroup.Item>turnover: {turnover}</ListGroup.Item>
                                     </ListGroup>
                                 </Accordion.Collapse>
