@@ -33,7 +33,7 @@ const ShootingChart = () => {
                 }
             })
             setShotData({
-                labels: ["LESS THAN 5FT", "5-9FT","10-14FT","15=19FT","20-24FT","25-29ft"],
+                labels: ["LESS THAN 5FT", "5-9FT","10-14FT","15-19FT","20-24FT","25-29ft"],
                 datasets: [
                     {
                         label: player[0],
