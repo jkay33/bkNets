@@ -38,17 +38,23 @@ const ShootingChart = () => {
                     {
                         label: player[0],
                         data: [lessThan5[0], five9ft[0], ten14ft[0], fifteen19ft[0], twenty24ft[0], twentyfive29ft[0]],
-                        backgroundColor: 'rgba(255,0,0,0.5)'
+                        backgroundColor: 'rgba(255,0,0,0.5)',
+                        borderColor: 'rgba(255,0,0,0.2)',
+                        fill: false
                     },
                     {
                         label: player[1],
                         data: [lessThan5[1], five9ft[1], ten14ft[1], fifteen19ft[1], twenty24ft[1], twentyfive29ft[1]],
-                        backgroundColor: 'rgba(0,0,255,0.5)'
+                        backgroundColor: 'rgba(0,0,255,0.5)',
+                        borderColor: 'rgba(0,0,255,0.2)',
+                        fill: false
                     },
                     {
                         label: player[2],
                         data: [lessThan5[2], five9ft[2], ten14ft[2], fifteen19ft[2], twenty24ft[2], twentyfive29ft[2]],
-                        backgroundColor: 'rgba(0,255,0,0.5'
+                        backgroundColor: 'rgba(0,255,0,0.5',
+                        borderColor: 'rgba(0,255,0,0.2',
+                        fill: false
                     }
                 ]
             })

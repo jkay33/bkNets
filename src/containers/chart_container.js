@@ -32,13 +32,13 @@ const BarChart = () => {
                     label: "OFFRTG",
                     stack: "Stack 0",
                     data: offrtg,
-                    backgroundColor: 'rgba(75,192,192,0.6)'
+                    backgroundColor: 'rgba(0,255,0,0.4)'
                 },
                 {
                     label: "DEFRTG",
                     stack: "Stack 0",
                     data: defrtg,
-                    backgroundColor: 'rgba(255,0,0,0.6)'
+                    backgroundColor: 'rgba(255,0,0,0.4)'
                 },
                 {
                     label: "NETRTG",
