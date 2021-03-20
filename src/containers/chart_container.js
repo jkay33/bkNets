@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { csv } from 'd3-request';
 import { Bar } from 'react-chartjs-2';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import './chart.css';
 import barData from './data/nbaData.csv';
@@ -74,8 +74,12 @@ const BarChart = () => {
     }, [])
     return(
         <Container fluid>
-            <h1>Durant's Pairing Efficiency</h1>
-            <Bar data={chartData} options={options} />
+            <h1>Kevin Durant Player Pairing Efficiency</h1>
+            <Row>
+                <Col>
+                    <Bar data={chartData} options={options} />
+                </Col>
+            </Row>
         </Container>
     )
 }
