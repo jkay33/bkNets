@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { csv } from 'd3-request';
 import { Line } from 'react-chartjs-2';
-import { Container, Row, Col, Figure } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import './chart.css';
 import shootingData from './data/nbaShootingData.csv';
