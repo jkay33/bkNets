@@ -72,7 +72,7 @@ const ShootingChart = () => {
         shotChart();
     }, [])
     return(
-        <Container>
+        <Container fluid>
             <Row>
                 <Col>
                     <Line data={shotData} options={options} />
